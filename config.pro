@@ -1,17 +1,22 @@
 ﻿
 model_note_display NO
-shade_with NO
+shade_with CURVES
 freeze_failed_assy_comp YES
 spin_center_display NO
-display shade
+display SHADEWITHEDGES
 tol_display NO
 datum_point_symbol DOT
 save_display YES
-display_axes no
+display_axes YES
 display_coord_sys no
 display_planes no
 display_points no
 spin_with_orientation_center yes
+
+content_favorites_page_options pro_unit_length
+edge_display_quality normal
+nmgr_toaster_bhvr show
+skip_small_surfaces no
 
 mdl_tree_cfg_file C:\Program Files\PTC\Creo 5.0.0.0\Common Files\text\tree.cfg
 global_appearance_file C:\Program Files\PTC\Creo 5.0.0.0\Common Files\graphic-library\appearances\appearance.dmt
@@ -20,12 +25,10 @@ drawing_setup_file $PRO_DIRECTORY\text\prodetail.dtl
 format_setup_file $PRO_DIRECTORY\text\prodetail.dtl
 pro_unit_length unit_mm
 pro_unit_mass unit_kilogram
+
 template_designasm $PRO_DIRECTORY\templates\mmns_asm_design.asm
-
 template_drawing $PRO_DIRECTORY\templates\a3_drawing.drw
-
 template_sheetmetalpart $PRO_DIRECTORY\templates\mmns_part_sheetmetal.prt
-
 template_solidpart $PRO_DIRECTORY\templates\mmns_part_solid.prt
 
 todays_date_note_format %Mmm-%dd-%yy
